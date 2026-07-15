@@ -3,75 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The PROMISE Foundation</title>
-  <meta name="description" content="The structural science of human commitment. Research, papers, and applied tools from The PROMISE Foundation.">
-  <link rel="stylesheet" href="styles.css">
+  <title>The PROMISE Foundation — Under Development</title>
+  <meta name="description" content="The structural science of human commitment. The PROMISE Foundation website is under development.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper-top: #EDEEE9;
+      --paper-bottom: #E3E4DE;
+      --ink: #182831;
+      --body: #313f47;
+      --slate: #5a666c;
+      --rule: #cbcdc6;
+      --blueprint: #2f5d74;
+
+      --serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+      --sans: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: linear-gradient(180deg, var(--paper-top), var(--paper-bottom));
+      color: var(--body);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 5vw, 2rem);
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 42rem;
+      margin: 0 auto;
+      animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--blueprint);
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin: 0 0 1.6rem;
+    }
+    .eyebrow::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: var(--rule);
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      color: var(--ink);
+      font-size: clamp(2.15rem, 6vw, 3.25rem);
+      line-height: 1.06;
+      letter-spacing: -0.01em;
+      margin: 0 0 1.9rem;
+    }
+
+    .tagline {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2.6vw, 1.45rem);
+      line-height: 1.4;
+      color: var(--ink);
+      margin: 0 0 1.6rem;
+    }
+
+    p.intro {
+      font-size: 1rem;
+      line-height: 1.72;
+      margin: 0 0 1.3rem;
+      max-width: 38rem;
+    }
+
+    .note {
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: var(--slate);
+      border-left: 2px solid var(--blueprint);
+      padding-left: 1rem;
+      margin: 2.3rem 0 0;
+    }
+
+    footer {
+      margin-top: 2.6rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.85rem;
+      color: var(--slate);
+      line-height: 1.7;
+    }
+    footer .name {
+      font-family: var(--serif);
+      font-weight: 500;
+      color: var(--ink);
+    }
+    footer a {
+      color: var(--blueprint);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+    footer a:hover { border-color: var(--blueprint); }
+
+    a:focus-visible {
+      outline: 2px solid var(--blueprint);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .wrap { animation: none; }
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <p class="eyebrow">Under Development</p>
 
-  <header>
-    <div class="container">
-      <div class="site-title">
-        <a href="index.html">The PROMISE Foundation</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="framework.html">Framework</a></li>
-          <li><a href="book.html">Book</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <h1>The PROMISE Foundation</h1>
 
-  <main>
-    <div class="container">
+    <p class="tagline">The structural science of human commitment.</p>
 
-      <h1>The structural science of human commitment.</h1>
+    <p class="intro">Every promise has three parties: the one who makes it, the one who receives it, and the one who bears the consequences. The third party is almost never at the table. The third party always pays when the structure fails.</p>
 
-      <p class="tagline">
-        Every promise has three parties: the one who makes it, the one who receives it, and the one who bears the consequences. The third party is almost never at the table. The third party always pays when the structure fails.
-      </p>
+    <p class="intro">The PROMISE Foundation studies why promises hold or break — across construction, governance, treaties, marriages, and every other place humans make commitments to each other. The work is grounded in fifty years of construction and procurement of federal, state and local projects and fifteen years of running industrial production lines. The framework was named in February 2026. The evidence has been accumulating since 1975.</p>
 
-      <p>
-        The PROMISE Foundation studies why promises hold or break — across construction, governance, treaties, marriages, and every other place humans make commitments to each other. The work is grounded in fifty years of construction and procurement of federal, state and local projects and fifteen years of running industrial production lines. The framework was named in February 2026. The evidence has been accumulating since 1975.
-      </p>
+    <p class="note">This site is being rebuilt. The framework, the book, and the analyzer will return here soon.</p>
 
-      <div class="paths">
-        <h2>Three ways in</h2>
-
-        <div class="path-item">
-          <a href="book.html">Read the book</a>
-          <div class="desc"><em>The Three Laws: Fifty Years to Focus.</em> Forthcoming. Chapter 1 available now.</div>
-        </div>
-
-        <div class="path-item">
-          <a href="framework.html">Read the framework</a>
-          <div class="desc">Six papers, one mathematical formalism, one diagnostic instrument, one historical case study.</div>
-        </div>
-
-        <div class="path-item">
-          <a href="https://3pq.online" target="_blank" rel="noopener">Try the analyzer</a>
-          <div class="desc">A free tool that tests any RFP or contract against the three laws.</div>
-        </div>
-      </div>
-
-      <p class="credibility">
-        The Research Support Facility at the National Renewable Energy Laboratory was procured using this framework in 2007. It came in on budget, on schedule, and was completed as the largest net-zero office building in the United States. The Design-Build Institute of America's <em>Federal Sector Best Practices</em> (2023) cites the RSF as a lessons-learned reference for federal agencies and formalizes the Owner Advisor role that the RSF procurement helped establish.
-      </p>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-line"><strong>The PROMISE Foundation</strong></div>
-      <div class="footer-line">The PROMISE Foundation is in formation · Missouri</div>
-      <div class="footer-line">Contact: <a href="mailto:davidmshelton.email@gmail.com">davidmshelton.email@gmail.com</a></div>
-      <div class="footer-line">Research: <a href="https://ssrn.com/author=10508137" target="_blank" rel="noopener">SSRN author page</a></div>
-    </div>
-  </footer>
-
+    <footer>
+      <div class="name">The PROMISE Foundation</div>
+      <div>In formation · Missouri</div>
+      <div>Contact: <a href="mailto:davidmshelton.email@gmail.com">davidmshelton.email@gmail.com</a></div>
+    </footer>
+  </div>
 </body>
 </html>
